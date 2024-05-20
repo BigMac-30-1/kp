@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fff</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+  </head>
+
+  <body class="body">
+    <header class="header">
+      <div class="container header-container">
+        <a href="./index.html" class="header-logo-link">
+          <table>
+            <tr>
+              <th>
+                <img
+                  class="logo-gif"
+                  src="img/kazino-1.gif"
+                  alt="fffatality logo"
+                  style="
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 0px;
+                    margin-bottom: 10px;
+                    vertical-align: middle;
+                  "
+                />
+              </th>
+              <th>
+                <img
+                  class="header-logo"
+                  src="./img/svg/logo.svg"
+                  alt="fffatality logo"
+                />
+              </th>
+            </tr>
+          </table>
+        </a>
+        </a>
+        <nav class="header-nav">
+          <ul class="header-menu">
+            <li class="header-menu-item">
+              <a href="./registration.html" class="header-menu-link"
+                >Регистрация</a
+              >
+            </li>
+            <li class="header-menu-item">
+              <a href="./about.html" class="header-menu-link">О нас</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="./help.html" class="header-menu-link current"
+                >Поддержка</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="header-burger"><span>menu</span></button>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="hero">
+          <h1 class="hero-title">Поддержка</h1>
+          <p class="hero-desc">Опишите вашу проблему</p>
+          <form method="post" id="supportForm" class="form">
+            <label class="field">
+              <span class="field-label">Email</span>
+              <input type="email" name="email" id="email" class="field-input" required />
+            </label>
+            <label class="field">
+              <span class="field-label">Сообщение</span>
+              <textarea
+                name="message"
+                class="field-input field-input-textarea"
+                required
+              ></textarea>
+            </label>
+            <div class="form-footer">
+              <button type="submit" id="submitBtn" class="form-btn">
+                Отправить
+              </button>
+              <button
+                type="button"
+                class="form-btn form-btn-secondary"
+                onclick="history.back()"
+              >
+                Назад
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <a href="./index.html" class="footer-logo"> ООО "Fffatality" </a>
+        <nav class="footer-nav">
+          <ul class="footer-menu">
+            <li class="footer-menu-item">
+              <a href="./registration.html" class="footer-menu-link"
+                >Регистрация</a
+              >
+            </li>
+            <li class="footer-menu-item">
+              <a href="./about.html" class="footer-menu-link">О нас</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="./help.html" class="footer-menu-link">Поддержка</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-box">
+          <h2 class="footer-box-title">Контакты</h2>
+          <ul class="footer-box-list">
+            <li class="footer-box-item">
+              <a href="tel:+375173922085" class="footer-box-link"
+                >+375 (17) 392-20-85</a
+              >
+            </li>
+            <li class="footer-box-item">
+              <a href="tel:+375173921454" class="footer-box-link"
+                >+375 (17) 392-14-54</a
+              >
+            </li>
+            <li class="footer-box-item">
+              <a href="mailto:inform@fatality-group.by" class="footer-box-link"
+                >inform@fatality-group.by</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/common.js"></script>
+    <script src="./js/alert.js"></script>
+    <script src="./js/save_to_xml.js"></script>
+    <script src="./js/help.js"></script>
+  </body>
+</html>
